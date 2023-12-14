@@ -12,10 +12,18 @@
           </span>
         </h2>
         <div class="controls">
-          <button class="prev" @click="prev">Prev</button>
-          <button class="play" v-if="!isPlaying" @click="play">Play</button>
-          <button class="pause" v-else @click="pause">Pause</button>
-          <button class="next" @click="next">Next</button>
+          <button class="prev" @click="prev">
+            <img src="./assets/icons/controls/rewind-button.png" />
+          </button>
+          <button class="play" v-if="!isPlaying" @click="play">
+            <img src="./assets/icons/controls/play.png" />
+          </button>
+          <button class="pause" v-else @click="pause">
+            <img src="./assets/icons/controls/pause.png" />
+          </button>
+          <button class="next" @click="next">
+            <img src="./assets/icons/controls/forward-button.png" />
+          </button>
         </div>
       </section>
       <section class="playlist">
