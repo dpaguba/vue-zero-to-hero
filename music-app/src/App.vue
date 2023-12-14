@@ -190,4 +190,33 @@ button:hover {
   background-color: #cc2e5d;
   opacity: 1;
 }
+.playlist {
+  padding: 0 30px;
+}
+
+.playlist h3 {
+  color: #212121;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.playlist .song {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.playlist .song:hover {
+  color: #cc2e5d;
+}
+
+.playlist .song.playing {
+  color: #fff;
+  background-image: linear-gradient(to right, #cc2e5d, #ff5858);
+}
 </style>
