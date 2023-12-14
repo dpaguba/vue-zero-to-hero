@@ -1,26 +1,66 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <header>
+      <h1>My Music</h1>
+    </header>
+    <main>
+      <section class="player">
+        <h2 class="song-title">
+          {{ current.title }}
+        </h2>
+      </section>
+    </main>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: 'app',
+  data () {
+    return {
+      current: {
+        title: 'SONG TITLE'
+      },
+      songs: [
+        {
+          title: 'Summer Party',
+          artist: 'Summer',
+          src: require('./assets/mp3/sp.mp3')
+        },
+        {
+          title: 'Happy Day',
+          artist: 'Sia',
+          src: require('./assets/mp3/hd.mp3')
+        },
+        {
+          title: 'Tokyo Cafe',
+          artist: 'Tvari',
+          src: require('./assets/mp3/ttc.mp3')
+        }
+      ]
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "sanf-serif";
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #212121;
+  color: #fff;
 }
 </style>
