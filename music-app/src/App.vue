@@ -145,6 +145,49 @@ main {
 .controls {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 30px 15px;
+}
+
+button {
+  appearance: none;
+  background-color: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.play,
+.pause {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 25px;
+  margin: 0 15px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #cc2e5d;
+}
+
+.prev,
+.next {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin: 0 15px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: rgba(204, 46, 93, 0.8);
+  transition: 0.2s;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #cc2e5d;
+  opacity: 1;
 }
 </style>
