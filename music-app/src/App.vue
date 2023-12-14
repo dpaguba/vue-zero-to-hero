@@ -141,4 +141,10 @@ main {
   font-weight: 400;
   font-style: italic;
 }
+
+.controls {
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
 </style>
