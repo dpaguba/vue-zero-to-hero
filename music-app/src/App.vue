@@ -68,6 +68,12 @@ export default {
         this.player.src = this.current.src;
       }
       this.player.play();
+      this.player.addEventListener(
+        "ended",
+        function () {
+          this.next();
+        }.bind(this)
+      );
       this.isPlaying = true;
     },
 
