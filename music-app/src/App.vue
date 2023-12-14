@@ -122,4 +122,10 @@ header {
   background-color: #212121;
   color: #fff;
 }
+main {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 25px;
+}
 </style>
